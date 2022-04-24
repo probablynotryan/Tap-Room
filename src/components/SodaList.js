@@ -11,8 +11,10 @@ export default function SodaList (props) {
         current = {soda.current}
         id = {soda.id}
         sellPint = {props.sellPint}
+        addSoda = {props.addSoda}
         />
       )}
+      <button onClick={() => props.addSoda()}>Add MOAR SODA.</button>
     </>
   )
 }

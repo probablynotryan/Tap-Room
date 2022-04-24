@@ -41,6 +41,9 @@ export default class SodaControl extends React.Component {
     });
   }
 
+  handleAddSoda = () => {
+    window.open('', '','height=600,width=600');
+  }
 
   render(){
     return (
@@ -48,6 +51,7 @@ export default class SodaControl extends React.Component {
       <SodaList
       sodaList = {this.state.sodas}
       sellPint = {this.handleSellPint}
+      addSoda = {this.handleAddSoda}
         />
       </>
     )
