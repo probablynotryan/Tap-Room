@@ -36,8 +36,8 @@ export default class SodaControl extends React.Component {
 
   handleSellPint = (id) => {
     this.setState(prevState => {
-      return ({sodas: prevState.sodas.map(s => (s.id === id) &&
-        {...s, current: Math.max(s.current - 1, 0)} || {...s})})
+      return ({sodas: prevState.sodas.map(s => (s.id === id) ?
+        {...s, current: Math.max(s.current - 1, 0)} : {...s})})
     });
   }
 
