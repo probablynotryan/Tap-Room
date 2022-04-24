@@ -1,8 +1,8 @@
 import React from "react";
 import { v4 } from 'uuid';
-import SodaControl from './SodaControl';
+import PropTypes from "prop-types";
 
-export default function AddSoda() {
+export default function AddSoda(props) {
 
   function handleNewTicketFormSubmission(e) {
     e.preventDefault();
