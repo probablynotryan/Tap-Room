@@ -1,10 +1,12 @@
 import React from "react";
 import SodaList from "./SodaList";
+import AddSoda from "./AddSoda";
 
 export default class SodaControl extends React.Component {
   constructor(props){
     super(props);
     this.state = {
+      addVisible : null,
       sodas: [
         {
           name: 'Dr. Salt',
@@ -34,6 +36,10 @@ export default class SodaControl extends React.Component {
     };
   }
 
+  // handleAddSoda = () => {
+
+  // }
+
   handleSellPint = (id) => {
     this.setState(prevState => {
       return ({sodas: prevState.sodas.map(s => (s.id === id) ?
@@ -41,18 +47,22 @@ export default class SodaControl extends React.Component {
     });
   }
 
-  handleAddSoda = () => {
-    window.open('', '','height=600,width=600');
+  handleAddSodaForm = () => {
+    this.setState(prevState => ({addVisible: !prevState.addVisible}))
   }
 
   render(){
+    let currentlyVisibileState = (this.state.addVisible) ? <AddSoda /> : null;
+    
+
     return (
       <>
       <SodaList
       sodaList = {this.state.sodas}
       sellPint = {this.handleSellPint}
-      addSoda = {this.handleAddSoda}
+      addSoda = {this.handleAddSodaForm}
         />
+      {currentlyVisibileState}
       </>
     )
   }
