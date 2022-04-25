@@ -51,8 +51,13 @@ export default class SodaControl extends React.Component {
     this.setState(prevState => ({addVisible: !prevState.addVisible}))
   }
 
+  handleAddNewSodaToList = (newSoda) => {
+    const newSodaList = this.state.sodas.concat(newSoda);
+    this.setState({sodas: newSodaList})
+  }
+
   render(){
-    let currentlyVisibileState = (this.state.addVisible) ? <AddSoda /> : null;
+    let currentlyVisibileState = (this.state.addVisible) ? <AddSoda onNewSodaCreation = {this.handleAddNewSodaToList} /> : null;
     
 
     return (

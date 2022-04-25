@@ -1,11 +1,13 @@
 import React from "react";
 import Soda from "./Soda";
+import PropTypes from "prop-types";
 
 export default function SodaList (props) {
   return (
     <>
       {props.sodaList.map((soda) =>
-        <Soda
+        <Soda 
+        key = {soda.id}
         name = {soda.name}
         brand = {soda.brand}
         current = {soda.current}
@@ -18,3 +20,7 @@ export default function SodaList (props) {
     </>
   )
 }
+
+SodaList.propTypes = {
+  sodaList: PropTypes.array
+};

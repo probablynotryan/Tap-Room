@@ -4,15 +4,14 @@ import PropTypes from "prop-types";
 
 export default function AddSoda(props) {
 
-  function handleNewTicketFormSubmission(e) {
+  function handleNewSodaFormSubmission(e) {
     e.preventDefault();
-    console.log(e.target.name.value);
-    console.log(e.target.brand.value);
+    props.onNewSodaCreation({name: e.target.name.value, brand: e.target.brand.value, price: e.target.price.value, full: 124, current: 124, id:v4()});
   }
 
   return (
     <>
-      <form>
+      <form onSubmit={handleNewSodaFormSubmission}>
         <input
           type = "text"
           name = "brand"
@@ -25,8 +24,12 @@ export default function AddSoda(props) {
           type = "text"
           name = "price"
           placeholder = "Price per Pint" />
-        <button type = 'submit'>ADD IT UP.</button>
+        <button type = 'submit'>Add Soda</button>
       </form>
     </>
   );
+}
+
+AddSoda.propTypes = {
+  onNewSodaCreation: PropTypes.func
 }
