@@ -4,7 +4,7 @@ export default function Soda (props) {
   return (
     <>
       <p>
-        {props.name} -- {props.brand} -- {props.current} {props.id}
+        {props.name} by {props.brand} -- {props.current} pints remaining
         <button type="button" onClick = {() => props.sellPint(props.id)}>Gimme.</button>
       </p>
     </>
