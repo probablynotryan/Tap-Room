@@ -6,7 +6,7 @@ export default function AddSoda(props) {
 
   function handleNewSodaFormSubmission(e) {
     e.preventDefault();
-    props.onNewSodaCreation({name: e.target.name.value, brand: e.target.brand.value, price: e.target.price.value, full: 124, current: 124, id:v4()});
+    props.onNewSodaCreation({name: e.target.name.value, calories: e.target.calories.value, brand: e.target.brand.value, price: e.target.price.value, full: 124, current: 124, id:v4()});
   }
 
   return (
@@ -20,6 +20,10 @@ export default function AddSoda(props) {
           type = "text"
           name = "name"
           placeholder = "Name of Soda" />
+        <input
+          type = "text"
+          name = "calories"
+          placeholder = "Calories per Pint" />
         <input
           type = "text"
           name = "price"

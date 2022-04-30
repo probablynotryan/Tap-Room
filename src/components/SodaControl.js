@@ -12,14 +12,16 @@ export default class SodaControl extends React.Component {
           name: 'Dr. Salt',
           brand: 'Wizzys Fizzies',
           price: 4,
+          calories: 203,
           full: 124,
           current: 124,
           id: 1
         },
         {
-          name: 'Valley Dew',
+          name: 'Diet Valley Dew',
           brand: 'Bestseat Zola',
           price: 4,
+          calories: 0,
           full: 124,
           current: 124,
           id: 2
@@ -27,6 +29,7 @@ export default class SodaControl extends React.Component {
         {
           name: 'Banta',
           brand: 'Bestseat Zola',
+          calories: 20421,
           price: 4.5,
           full: 124,
           current: 124,

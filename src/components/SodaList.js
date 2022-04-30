@@ -11,6 +11,7 @@ export default function SodaList (props) {
         name = {soda.name}
         brand = {soda.brand}
         current = {soda.current}
+        calories = {soda.calories}
         id = {soda.id}
         sellPint = {props.sellPint}
         addSoda = {props.addSoda}
