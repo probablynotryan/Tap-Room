@@ -62,12 +62,12 @@ export default class SodaControl extends React.Component {
 
     return (
       <>
-      <SodaList
-      sodaList = {this.state.sodas}
-      sellPint = {this.handleSellPint}
-      addSoda = {this.handleAddSodaForm}
-        />
-      {currentlyVisibileState}
+        <SodaList
+        sodaList = {this.state.sodas}
+        sellPint = {this.handleSellPint}
+        addSoda = {this.handleAddSodaForm}
+          />
+        {currentlyVisibileState}
       </>
     )
   }
