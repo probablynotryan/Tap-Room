@@ -1,6 +1,13 @@
-# Getting Started with Create React App
+## Tap Room (but with Sodas)
+by Ryan Bass
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Description
+Yoda's looking to keep track of his soda inventory using React. (Week 16 project at Epicodus, familarizing myself with different types of components and state.)
+
+### Component Tree
+
+![](component-tree.png)
+
 
 ## Available Scripts
 
