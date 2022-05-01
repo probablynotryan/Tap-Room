@@ -5,7 +5,7 @@ export default function Soda (props) {
   return (
     <>
       <div class="sodas">
-        <span>{props.name} by {props.brand} || Calories: {props.calories} || Price: ${props.price} ---&gt;</span>
+        <span>{props.name} by {props.brand} || Calories: {props.calories} || Price: ${props.price} || Pints Remaining: {props.current} ---&gt;</span>
         <button type="button" onClick = {() => props.sellPint(props.id)}>Gimme.</button>
       </div>
     </>

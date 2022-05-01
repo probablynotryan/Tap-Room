@@ -14,7 +14,7 @@ export default class SodaControl extends React.Component {
           price: 4,
           calories: 203,
           full: 124,
-          current: 124,
+          current: 43,
           id: 1
         },
         {
@@ -23,7 +23,7 @@ export default class SodaControl extends React.Component {
           price: 2,
           calories: 0,
           full: 124,
-          current: 124,
+          current: 80,
           id: 2
         },
         {
