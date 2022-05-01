@@ -20,7 +20,7 @@ export default class SodaControl extends React.Component {
         {
           name: 'Diet Valley Dew',
           brand: 'Bestseat Zola',
-          price: 4,
+          price: 2,
           calories: 0,
           full: 124,
           current: 124,
@@ -30,7 +30,7 @@ export default class SodaControl extends React.Component {
           name: 'Banta',
           brand: 'Bestseat Zola',
           calories: 20421,
-          price: 4.5,
+          price: 5,
           full: 124,
           current: 124,
           id: 3
@@ -38,10 +38,6 @@ export default class SodaControl extends React.Component {
       ]
     };
   }
-
-  // handleAddSoda = () => {
-
-  // }
 
   handleSellPint = (id) => {
     this.setState(prevState => {
